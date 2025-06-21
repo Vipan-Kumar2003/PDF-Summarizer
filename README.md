@@ -43,4 +43,30 @@ Use it for:
 ---
 
 ## 📂 Project Structure
+pdf_summarizer/
+├── detailed_invoice.pdf ← sample invoice file
+├── extract_invoice_etl.py ← ETL pipeline script
+├── pdf_dashboard.py ← Streamlit dashboard
+├── requirements.txt ← Python dependencies
+└── README.md ← this file
+
+
+
+---
+
+## 🛠️ How to Run Locally
+
+### 🔌 Prerequisites
+* Python 3.x  
+* WAMP Server running  
+* A MySQL database named **`etl_pdf`**
+
+---
+
+### 1️⃣ Clone the Repo
+
+```bash
+git clone https://github.com/yourusername/pdf-summarizer.git
+cd pdf-summarizer
+
 
