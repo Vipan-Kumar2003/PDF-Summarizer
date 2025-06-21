@@ -1,0 +1,7 @@
+streamlit>=1.28.0
+pandas>=1.5.0
+pdfplumber>=0.9.0
+plotly>=5.15.0
+nltk>=3.8.1
+sqlalchemy>=1.4.0
+pymysql>=1.0.0 
