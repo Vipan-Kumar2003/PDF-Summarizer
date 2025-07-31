@@ -29,6 +29,10 @@ def load_data():
 # -----------------------
 def main():
     st.set_page_config(page_title="📄 Invoice Dashboard", layout="wide")
+
+    # 🔼 Display PNG Image (e.g., a logo or banner)
+    st.image("logo.png", width=150)  # You can adjust the width as needed
+
     st.title("📄 Extracted Invoice Dashboard")
 
     df = load_data()
@@ -47,7 +51,6 @@ def main():
             df = df[df['item_description'].str.lower().str.contains(search)]
 
     # Show summary
-  # Show summary
     st.subheader("📊 Summary Statistics")
     df['total'] = pd.to_numeric(df['total'], errors='coerce')  # Convert to float
     total_invoice = df['total'].sum()
